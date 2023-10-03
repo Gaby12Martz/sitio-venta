@@ -1,10 +1,13 @@
-header{
+.bg_hero{
     background-image: linear-gradient(90deg,rgba(59,72,98,.9) 0,rgba(59,72,98,.9)), url(../img/header_bg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: left;
 }
 .header__logo {
+    display: block;
     width: 10rem;
+    
 }
 header-image{
     background-position: right;
@@ -13,20 +16,4 @@ header-image{
     height: 6rem;
     width: 6rem;
     margin: 1rem 1rem 1rem 1rem;
-}
-.btn {
-    background-color: #8cbc00;
-    display: block;
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    transition: background-color .3s ease-out ;
-    text-align: center;
-    border: none;
-    width: 100%;
-}
-.btn:hover {
-    background-color: #769c02;
-    cursor: pointer;
 }

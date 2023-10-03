@@ -6,76 +6,234 @@
 
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Real State</title>
 </head>
 <body>
-    <header>
-        <div class="bg-cover bg-black"></div>
-        <div class="flex justify-between pl-8">
-            <div class="w-52 h-52">
-                <img  class="w-52 h-52 pl-8" src="build/img/logo.svg" alt="Real State" class="header-logo"> 
-            </div>
-            
-            <nav class="flex flex-row gap-8 mt-0">
-                <a class="text-red-400 text-4.5xl mb-8 " href="#">Nosotros</a>
-                <a class="text-black text-2xl" href="#">Propiedades</a>
-                <a class="text-black text-2xl " href="#">Blog</a>
-                <a class="text-black text-2xl " href="#">Testimoniales</a>
-                <a class="text-black text-2xl" href="#">Contacto</a>
-            </nav>
-        </div>
 
-        <div class="mx-auto max-w-2xl w-95">
-            <div class="max-w-screen-md flex justify-end">
-                <h1 class="text-white text-left pl-8">Encuentra tu casa de lujo al mejor precio</h1>
-                <p class="text-red-400 text-4.5xl mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ea pariatur dolores ducimus! Repellendus maiores nemo tempore, cupiditate pariatur expedita
-                </p>  
-                <img  src="build/img/imagenHeader.jpg" alt="imagen header">
-                         
+    <header class="bg-black fixed h-auto top-0 left-0 z-[500] w-full">
+        <nav class="md:flex justify-around py-5 items-center mt-2">
+            <a href="#" class="w-fit">
+                <img  class="w-64 h-auto" src="build/img/logo.svg" alt="Real State" > 
+            </a>
+            <div class="flex flex-row gap-8">
+                <a class="text-left text-white" style="font-size: smaller; font-weight: bold; text-decoration: underline" href="#">Propiedades</a>
+                <a class="text-left text-white" style="font-size: smaller; font-weight: bold; text-decoration: underline" href="#">Propiedades</a>
+                <a class="text-left text-white" style="font-size: smaller; font-weight: bold; text-decoration: underline" href="#">Blog</a>
+                <a class="text-left text-white" style="font-size: smaller; font-weight: bold; text-decoration: underline" href="#">Testimoniales</a>
+                <a class="text-left text-white" style="font-size: smaller; font-weight: bold; text-decoration: underline" href="#">Contacto</a>
             </div>
-        </div>
+        </nav>
     </header>
+    <section class="pt-16 mt-16 bg_hero">
+        <div class=":bg-cover bg-black"></div>
+  
 
-    <main class="pt-20 max-w-screen-xl mx-auto">
-        <h2 class="text-left">Nuestras <span>Propiedades</span></h2>
+        <div class="grid grid-cols-2 container pt-40 pl-5 lg:pl-12 ">
+            <div class="order-1 text-xl"> 
+                <h1 class="text-white my-6 text-left font-roboto font-cursive">Encuentra tu casa de lujo al mejor precio</h1>
+                <p class="text-white block font-bold px-45 my-2  text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ea pariatur dolores ducimus! Repellendus maiores nemo tempore, cupiditate pariatur expedita</p>
+            </div>   
+            <div class="order-2 -bottom-10 right-20 -mt-40 relative"> 
+                <img class=" rounded-bl-3xl rounded-tl-3xl max-w-50rem block " src="build/img/imagenHeader.jpg" alt="imagen header">
+            </div>
+        </div>
+        
+    </section>
 
-        <div class="propiedades__grid">
-            <div class="bg-blue-500 mb-8">
-                <div class="propiedad__imagen">
-                    <h3 class="propiedad__nombre">Casa de Lujo con 3 Cuartos</h3>
+    <main class=" w-3/4 pt-10 md:container  items-center px-5 lg:px-20">
+        <h2 class="text-left text-zinc-400" style="font-size: x-large; font-weight: bold; text-decoration: underline;">Nuestras <span>Propiedades</span></h2>
+
+
+        <div class="grid md:grid-cols-3 text-center pt-3">
+            <div class="mb-8 mx-4 ">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
                 </div>
-                <div class="propiedad__contenido">
-                    <img src="img/propiedad_1.jpg" alt="propiedad_1">
-                    <p class="propiedad__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis esse alias eius ullam non possimus ex, hic molestiae error amet soluta sit eum sint.</p>
-                    <p class="propiedad__precio">$ 1,200,000.00</p>
-                    <input class="to-blue-500 block" type="text" value="Propiedades">
-                    <!-- <a class="btn" href="#">Ver Propiedad</a> -->
+                    <a class="block bg-white mb-8" href="img/propiedad_1.jpg">
+                    <img class=" object-cover " src="img/propiedad_1.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-center text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="text-center bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+
+            <div class="mb-8 mx-4">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
+                </div>
+                    <a class="block bg-white mb-8" href="img/propiedad_2.jpg">
+                    <img class=" object-cover" src="img/propiedad_2.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+
+            <div class="mb-8 mx-4">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
+                </div>
+                    <a class="block bg-white mb-8" href="img/propiedad_3.jpg">
+                    <img class=" object-cover" src="img/propiedad_3.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+
+            <div class="mb-8 mx-4">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
+                </div>
+                    <a class="block bg-white mb-8" href="img/propiedad_4.jpg">
+                    <img class=" object-cover" src="img/propiedad_4.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+
+            <div class="mb-8 mx-4">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
+                </div>
+                    <a class="block bg-white mb-8" href="img/propiedad_5.jpg">
+                    <img class=" object-cover" src="img/propiedad_5.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+
+            <div class="mb-8 mx-4">
+                <div class="propiedad_nombre">
+                    <h3>Casa de Lujo con 3 cuartos</h3>
+                </div>
+                    <a class="block bg-white mb-8" href="img/propiedad_6.jpg">
+                    <img class=" object-cover" src="img/propiedad_6.jpg" alt="imagen galeria">
+                    <p class="pt-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis.</p>
+                    <p class="text-2xl font-bold">$ 1,200,000.00</p>
+                    <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Propiedades</button>
+                </a>
+            </div>
+        </div>        
+    </main> 
+    <section>
+        <div class="grid md:grid-cols-2 items-center">
+            <div class="relative h-full">
+                <div class="absolute inset-0 opacity-75"></div>
+                <img class="w-fit object-cover h-full" src="./img/destacada.jpg" alt="imagen destacada">
+            </div>
+            <div class="pt-8 w-fit object-cover h-full bg-gradient-to-t from-slate-800  to-slate-800 p-12">
+                <h1 class="text-white" style="font-size: xx-large; font-weight: bold; text-decoration: underline">Propiedad Destacada</h1>
+                <div class="h-fit flex items-center justify-center">
+                    <div class="text-left">
+                        <p class="text-white text-lg">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum voluptatem suscipit ratione sapiente hic nobis quisquam, voluptates sed voluptatum enim totam quod nostrum tempore laboriosam magnam, repudiandae temporibus! Cupiditate!</p>
+                        <p class="text-3xl text-white text-left font-bold mt-8 h-12">$ 1,200,000.00</p>
+                        <button class="bg-white hover:bg-blue-700 text-black font-bold py-1 px-4 rounded  h-14">Ver Propiedades</button>
+                    </div>                   
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="md:flex dm:flex-row bg-slate-200 my-[3rem] mx-[8rem]">
+            <div class="px-[2rem] text-center">
+                <div class="flex flex-col items-center">
+                    <h2 class="block my-3 mx-0 text-4xl font-bold underline">Que dicen <span class="text-gray-600">Nuestros Clientes</span></h2>
+    
+                    <div class="flex flex-col items-center">
+                        <img class="h-[10rem] w-[10rem]" src="build/img/testimonial.jpg" alt="imagen testimonial">
+    
+                        <div class="bg-gray-400 py-[5rem]">
+                            <p class="text-2xl font-bold text-center">Familia Hernandez</p>
+                            <p class="block my-4 mx-0 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam deleniti. Id, quas porro illo deleniti excepturi hic unde eum vel mollitia aliquid molestiae earum harum exercitationem doloribus iste. Nostrum.</p>
+                             </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-[2rem] text-center">
+                <div class="flex flex-col">
+                    <h2 class="block my-3 mx-0 text-4xl font-bold underline">Ultimas Entradas<span class="text-gray-600">De Nuestro Blog</span></h2>
+    
+                    <div class="flex ">
+                        <div>
+                            <img class="w-auto h-full" src="build/img/blog_1.jpg" alt="imagen testimonial">
+                        </div>
+    
+                        <div class="bg-gray-400 text-left pl-4">
+                            <p class="text-2xl font-bold text-center">TITULO AQUI</p>
+                            <p class="block my-4 mx-0 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam deleniti. Id, quas porro illo deleniti excepturi hic unde eum vel mollitia aliquid molestiae earum harum exercitationem doloribus iste. Nostrum.</p>
+                            <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Leer Articulo</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bg-blue-500 mb-8">
-                    <div class="propiedad__imagen">
-                        <h3 class="propiedad__nombre">Casa de Lujo con 3 Cuartos</h3>
-                    </div>
-                    <div class="propiedad__contenido">
-                        <img src="img/propiedad_2.jpg" alt="propiedad_1">
-                        <p class="propiedad__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis esse alias eius ullam non possimus ex, hic molestiae error amet soluta sit eum sint.</p>
-                        <p class="propiedad__precio">$ 1,200,000.00</p>
-                        <input class="to-blue-500 block" type="text" value="Propiedades">
-                        <!-- <a class="btn" href="#">Ver Propiedad</a> -->
-                    </div>
-
-                    <div class="bg-blue-500 mb-8">
-                        <div class="propiedad__imagen">
-                            <h3 class="propiedad__nombre">Casa de Lujo con 3 Cuartos</h3>
+                <div class="flex flex-col">
+                    <h2 class="block my-3 mx-0 text-4xl font-bold underline"><span class="text-gray-600"></span></h2>
+    
+                    <div class="flex ">
+                        <div>
+                            <img class="w-full h-full" src="build/img/blog_2.jpg" alt="imagen testimonial">
                         </div>
-                        <div class="propiedad__contenido">
-                            <img src="img/propiedad_3.jpg" alt="propiedad_1">
-                            <p class="propiedad__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores adipisci totam eaque sunt facilis esse alias eius ullam non possimus ex, hic molestiae error amet soluta sit eum sint.</p>
-                            <p class="propiedad__precio">$ 1,200,000.00</p>
-                            <input class="to-blue-500 block" type="text" value="Propiedades">
-                            <!-- <a class="btn" href="#">Ver Propiedad</a> -->
+     
+                        <div class="bg-gray-400 text-left pl-4">
+                            <p class="text-2xl font-bold text-center">TITULO AQUI</p>
+                            <p class="block my-4 mx-0 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam deleniti. Id, quas porro illo deleniti excepturi hic unde eum vel mollitia aliquid molestiae earum harum exercitationem doloribus iste. Nostrum.</p>
+                            <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Leer Articulo</button>
                         </div>
-            </div> 
+                    </div>
+                </div>
 
+                <div class=" flex flex-col">
+                    <h2 class="block my-3 mx-0 text-4xl font-bold underline"> <span class="text-gray-600"></span></h2>
+    
+                    <div class="flex ">
+                        <div>
+                            <img class="w-fit h-full" src="build/img/blog_3.jpg" alt="imagen testimonial">
+                        </div>
+    
+                        <div class="bg-gray-400 text-left pl-4">
+                            <p class="text-2xl font-bold text-center">TITULO  AQUI</p>
+                            <p class="block my-4 mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam deleniti. Id, quas porro illo deleniti excepturi hic unde eum vel mollitia aliquid molestiae earum harum exercitationem doloribus iste. Nostrum.</p>
+                            <button class="bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Leer Articulo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-600 text-white w-full">
+        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            <div class="w-fit h-52 mt-10 pl-14">
+                <h3 class=" text-white" style="font-size: x-large; font-weight: bold; text-decoration: underline"">Navegación</h3>
+                <nav class="space-y-2 text-left pl-7">
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 block">Nosotros</a>
+                    <a href="#" class="text-gray-300 hover:text-white  transition duration-300 block">Propiedades</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 block">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 block">Testimoniales</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 block">Contacto</a>
+                </nav>
+            </div>
+    
+            <div class="w-fit h-44 text-left mt-10">
+                <h3 class=""text-left text-white" style="font-size: x-large; font-weight: bold; text-decoration: underline">Nosotros</h3>
+                <p class="text-gray-300 text-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore quo tempore! Atque porro quibusdam voluptas nisi corrupti. Unde, ipsam vel deleniti magnam nulla nemo suscipit sunt porro blanditiis? Nemo.
+                </p>
+            </div>
+    
+            <div class="w-fit h-44 mt-4">
+                <img class="w-fit h-40 pl-14" src="build/img/logo.svg" alt="imagen logo" class="w-16 h-16 object-contain">
+            </div>
+        </div>
+    
+        <p class="bg-gray-800 w-full text-gray-300 text-center mt-8">Todos los Derechos Reservados Real State</p>
+    </footer>     
+    
 </body>
 </html>
